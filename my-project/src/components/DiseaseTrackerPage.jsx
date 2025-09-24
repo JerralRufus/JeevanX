@@ -49,7 +49,7 @@ const DiseaseTrackerPage = () => {
   const getCoords = async (cityName) => {
     try {
       const response = await fetch(
-        `https://jeevan-x.vercel.app/api/geocode?city=${encodeURIComponent(cityName)}`
+        `https://jeevan-x.vercel.app/geocode?city=${encodeURIComponent(cityName)}`
       );
       const data = await response.json();
       if (data.length > 0) {
